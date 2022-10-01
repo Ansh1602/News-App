@@ -31,8 +31,8 @@ export default class App extends Component {
             progress={this.state.progress}
             onLoaderFinished={() => this.setProgress(0)}
           />
-          <News setProgress={this.setProgress} key="general" pageSize={5} country="in" category="general" />
-          {/* <Routes>
+          {/* <News setProgress={this.setProgress} key="general" pageSize={5} country="in" category="general" /> */}
+          <Routes>
             <Route exact path="/" element={<News setProgress={this.setProgress} key="general" pageSize={this.pageSize} category="general"></News>} />
             <Route exact path="/business" element={<News setProgress={this.setProgress} key="business" pageSize={this.pageSize} category="business"></News>} />
             <Route exact path="/entertainment" element={<News setProgress={this.setProgress} key="entertainment" pageSize={this.pageSize} category="entertainment"></News>} />
@@ -41,7 +41,7 @@ export default class App extends Component {
             <Route exact path="/science" element={<News setProgress={this.setProgress} key="science" pageSize={this.pageSize} category="science"></News>} />
             <Route exact path="/sports" element={<News setProgress={this.setProgress} key="sports" pageSize={this.pageSize} category="sports"></News>} />
             <Route exact path="/technology" element={<News setProgress={this.setProgress} key="technology" pageSize={this.pageSize} category="technology"></News>} />
-          </Routes> */}
+          </Routes>
 
         </BrowserRouter>
       </div>
